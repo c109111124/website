@@ -331,12 +331,12 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.disabled = true;
                 pastabuycarbtn.disabled = true;
                 stewbuycarbtn.disabled = true;
-                omuricecombo.disabled = true;
-                muffin.disabled = true;
-                souffle.disabled = true;
-                cake.disabled = true;
-                pastacombo.disabled = true;
-                sundae.disabled = true;
+                omuricecombobuycarbtn.disabled = true;
+                muffinbuycarbtn.disabled = true;
+                soufflebuycarbtn.disabled = true;
+                cakebuycarbtn.disabled = true;
+                pastacombobuycarbtn.disabled = true;
+                sundaebuycarbtn.disabled = true;
                
                 omuricebuycarbtn.innerText = '等待';
                 bakedricebuycarbtn.innerText = '等待';
@@ -344,12 +344,12 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.innerText = '等待';
                 pastabuycarbtn.innerText = '等待';
                 stewbuycarbtn.innerText = '等待';
-                omuricecombo.innerText = '等待';
-                muffin.innerText = '等待';
-                souffle.innerText = '等待';
-                cake.innerText = '等待';
-                pastacombo.innerText = '等待';
-                sundae.innerText = '等待';
+                omuricecombobuycarbtn.innerText = '等待';
+                muffinbuycarbtn.innerText = '等待';
+                soufflebuycarbtn.innerText = '等待';
+                cakebuycarbtn.innerText = '等待';
+                pastacombobuycarbtn.innerText = '等待';
+                sundaebuycarbtn.innerText = '等待';
 
 
                 omuricebuycarbtn.style.backgroundColor = 'gray';
@@ -358,12 +358,12 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.style.backgroundColor = 'gray';
                 pastabuycarbtn.style.backgroundColor = 'gray';
                 stewbuycarbtn.style.backgroundColor = 'gray';
-                omuricecombo.style.backgroundColor = 'gray';
-                muffin.style.backgroundColor = 'gray';
-                souffle.style.backgroundColor = 'gray';
-                cake.style.backgroundColor = 'gray';
-                pastacombo.style.backgroundColor = 'gray';
-                sundae.style.backgroundColor = 'gray';
+                omuricecombobuycarbtn.style.backgroundColor = 'gray';
+                muffinbuycarbtn.style.backgroundColor = 'gray';
+                soufflebuycarbtn.style.backgroundColor = 'gray';
+                cakebuycarbtn.style.backgroundColor = 'gray';
+                pastacombobuycarbtn.style.backgroundColor = 'gray';
+                sundaebuycarbtn.style.backgroundColor = 'gray';
 
 
                 flytime.innerText = shstime + '秒';
@@ -376,12 +376,12 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.disabled = false;
                 pastabuycarbtn.disabled = false;
                 stewbuycarbtn.disabled = false;
-                omuricecombo.disabled = false;
-                muffin.disabled = false;
-                souffle.disabled = false;
-                cake.disabled = false;
-                pastacombo.disabled = false;
-                sundae.disabled = false;
+                omuricecombobuycarbtn.disabled = false;
+                muffinbuycarbtn.disabled = false;
+                soufflebuycarbtn.disabled = false;
+                cakebuycarbtn.disabled = false;
+                pastacombobuycarbtn.disabled = false;
+                sundaebuycarbtn.disabled = false;
 
 
                 omuricebuycarbtn.innerText = '加入購物車';
@@ -390,12 +390,12 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.innerText = '加入購物車';
                 pastabuycarbtn.innerText = '加入購物車';
                 stewbuycarbtn.innerText = '加入購物車';
-                omuricecombo.innerText = '加入購物車';
-                muffin.innerText = '加入購物車';
-                souffle.innerText = '加入購物車';
-                cake.innerText = '加入購物車';
-                pastacombo.innerText = '加入購物車';
-                sundae.innerText = '加入購物車';
+                omuricecombobuycarbtn.innerText = '加入購物車';
+                muffinbuycarbtn.innerText = '加入購物車';
+                soufflebuycarbtn.innerText = '加入購物車';
+                cakebuycarbtn.innerText = '加入購物車';
+                pastacombobuycarbtn.innerText = '加入購物車';
+                sundaebuycarbtn.innerText = '加入購物車';
 
 
                 omuricebuycarbtn.style.backgroundColor = '#571e9d';
@@ -404,12 +404,12 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.style.backgroundColor = '#571e9d';
                 pastabuycarbtn.style.backgroundColor = '#571e9d';
                 stewbuycarbtn.style.backgroundColor = '#571e9d';
-                omuricecombo.style.backgroundColor = '#571e9d';
-                muffin.style.backgroundColor = '#571e9d';
-                souffle.style.backgroundColor = '#571e9d';
-                cake.style.backgroundColor = '#571e9d';
-                pastacombo.style.backgroundColor = '#571e9d';
-                sundae.style.backgroundColor = '#571e9d';
+                omuricecombobuycarbtn.style.backgroundColor = '#571e9d';
+                muffinbuycarbtn.style.backgroundColor = '#571e9d';
+                soufflebuycarbtn.style.backgroundColor = '#571e9d';
+                cakebuycarbtn.style.backgroundColor = '#571e9d';
+                pastacombobuycarbtn.style.backgroundColor = '#571e9d';
+                sundaebuycarbtn.style.backgroundColor = '#571e9d';
                 
 
                 
