@@ -138,6 +138,16 @@ exports.order = async (req, res) => {
         const pastacombo = req.body.pastacomboquantity !== undefined ? req.body.pastacomboquantity : null;
         const sundae = req.body.sundaequantity !== undefined ? req.body.sundaequantity : null;
 
+        const blacktea = req.body.blackteaquantity !== undefined ? req.body.blackteaquantity : null;
+        const american = req.body.americanquantity !== undefined ? req.body.americanquantity : null;
+        const latte = req.body.lattequantity !== undefined ? req.body.lattequantity : null;
+        const cappuccino = req.body.cappuccinoquantity !== undefined ? req.body.cappuccinoquantity : null;
+        const macchiato = req.body.macchiatoquantity !== undefined ? req.body.macchiatoquantity : null;
+        const hotcoco = req.body.hotcocoquantity !== undefined ? req.body.hotcocoquantity : null;
+        
+
+
+
         const lefttime = req.body.time;
         const price = req.body.price;
 
@@ -172,6 +182,12 @@ exports.order = async (req, res) => {
             cake,
             pastacombo,
             sundae,
+            blacktea,
+            american,
+            latte,
+            cappuccino,
+            macchiato,
+            hotcoco,
             finish: 0
         });
 

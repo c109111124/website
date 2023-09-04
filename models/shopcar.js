@@ -63,6 +63,31 @@ const shopcartSchema = new mongoose.Schema({
         
     },
 
+    blacktea:{
+        type: Number,
+
+    },
+    american:{
+        type: Number,
+
+    },
+    latte:{
+        type: Number,
+
+    },
+    cappuccino:{
+        type: Number,
+
+    },
+    macchiato:{
+        type: Number,
+
+    },
+    hotcoco:{
+        type: Number,
+
+    },
+
     finish: {
         type: Boolean,
         required: true,

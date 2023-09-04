@@ -120,6 +120,54 @@ window.addEventListener('load', function () {
             prepTime: 5,
         },
 
+        {
+            id:'blacktea',
+            name:'紅茶',
+            price:30,
+            image:'00/1106-11.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'american',
+            name:'美式',
+            price:30,
+            image:'00/1106-12.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'latte',
+            name:'拿鐵',
+            price:40,
+            image:'00/1106-13.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'cappuccino',
+            name:'卡布奇諾',
+            price:50,
+            image:'00/1106-14.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'macchiato',
+            name:'瑪奇朵',
+            price:55,
+            image:'00/1106-15.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'hotcoco',
+            name:'熱可可',
+            price:60,
+            image:'00/1106-16.jpg',
+            prepTime:5,
+        }
+
     ];
 
 
@@ -310,6 +358,31 @@ window.addEventListener('load', function () {
         showFoodItems('sundae');
     });
 
+    document.getElementById('blackteabuycarbtn').addEventListener('click', function () {
+        showFoodItems('blacktea');
+    });
+
+    document.getElementById('americanbuycarbtn').addEventListener('click', function () {
+        showFoodItems('american');
+    });
+
+    document.getElementById('lattebuycarbtn').addEventListener('click', function () {
+        showFoodItems('latte');
+    });
+
+    document.getElementById('cappuccinobuycarbtn').addEventListener('click', function () {
+        showFoodItems('cappuccino');
+    });
+
+    document.getElementById('macchiatobuycarbtn').addEventListener('click', function () {
+        showFoodItems('macchiato');
+    });
+
+    document.getElementById('hotcocobuycarbtn').addEventListener('click', function () {
+        showFoodItems('hotcoco');
+    });
+
+
 
 
 
@@ -337,6 +410,13 @@ window.addEventListener('load', function () {
                 cakebuycarbtn.disabled = true;
                 pastacombobuycarbtn.disabled = true;
                 sundaebuycarbtn.disabled = true;
+                blackteabuycarbtn.disabled = true;
+                americanbuycarbtn.disabled = true;
+                lattebuycarbtn.disabled = true;
+                cappuccinobuycarbtn.disabled = true;
+                macchiatobuycarbtn.disabled = true;
+                hotcocobuycarbtn.disabled = true;
+
                
                 omuricebuycarbtn.innerText = '等待';
                 bakedricebuycarbtn.innerText = '等待';
@@ -350,6 +430,14 @@ window.addEventListener('load', function () {
                 cakebuycarbtn.innerText = '等待';
                 pastacombobuycarbtn.innerText = '等待';
                 sundaebuycarbtn.innerText = '等待';
+                blackteabuycarbtn.innerText = '等待';
+                americanbuycarbtn.innerText = '等待';
+                lattebuycarbtn.innerText = '等待';
+                cappuccinobuycarbtn.innerText = '等待';
+                macchiatobuycarbtn.innerText = '等待';
+                hotcocobuycarbtn.innerText = '等待';
+
+
 
 
                 omuricebuycarbtn.style.backgroundColor = 'gray';
@@ -364,6 +452,13 @@ window.addEventListener('load', function () {
                 cakebuycarbtn.style.backgroundColor = 'gray';
                 pastacombobuycarbtn.style.backgroundColor = 'gray';
                 sundaebuycarbtn.style.backgroundColor = 'gray';
+                blackteabuycarbtn.style.backgroundColor = 'gray';
+                americanbuycarbtn.style.backgroundColor = 'gray';
+                lattebuycarbtn.style.backgroundColor = 'gray';
+                cappuccinobuycarbtn.style.backgroundColor = 'gray';
+                macchiatobuycarbtn.style.backgroundColor = 'gray';
+                hotcocobuycarbtn.style.backgroundColor = 'gray';
+
 
 
                 flytime.innerText = shstime + '秒';
@@ -382,6 +477,13 @@ window.addEventListener('load', function () {
                 cakebuycarbtn.disabled = false;
                 pastacombobuycarbtn.disabled = false;
                 sundaebuycarbtn.disabled = false;
+                blackteabuycarbtn.disabled = false;
+                americanbuycarbtn.disabled = false;
+                lattebuycarbtn.disabled = false;
+                cappuccinobuycarbtn.disabled = false;
+                macchiatobuycarbtn.disabled = false;
+                hotcocobuycarbtn.disabled = false;
+
 
 
                 omuricebuycarbtn.innerText = '加入購物車';
@@ -396,6 +498,13 @@ window.addEventListener('load', function () {
                 cakebuycarbtn.innerText = '加入購物車';
                 pastacombobuycarbtn.innerText = '加入購物車';
                 sundaebuycarbtn.innerText = '加入購物車';
+                blackteabuycarbtn.innerText = '加入購物車';
+                americanbuycarbtn.innerText = '加入購物車';
+                lattebuycarbtn.innerText = '加入購物車';
+                cappuccinobuycarbtn.innerText = '加入購物車';
+                macchiatobuycarbtn.innerText = '加入購物車';
+                hotcocobuycarbtn.innerText = '加入購物車';
+
 
 
                 omuricebuycarbtn.style.backgroundColor = '#571e9d';
@@ -410,6 +519,13 @@ window.addEventListener('load', function () {
                 cakebuycarbtn.style.backgroundColor = '#571e9d';
                 pastacombobuycarbtn.style.backgroundColor = '#571e9d';
                 sundaebuycarbtn.style.backgroundColor = '#571e9d';
+                blackteabuycarbtn.style.backgroundColor = '#571e9d';
+                americanbuycarbtn.style.backgroundColor = '#571e9d';
+                lattebuycarbtn.style.backgroundColor = '#571e9d';
+                cappuccinobuycarbtn.style.backgroundColor = '#571e9d';
+                macchiatobuycarbtn.style.backgroundColor = '#571e9d';
+                hotcocobuycarbtn.style.backgroundColor = '#571e9d';
+                
                 
 
                 
