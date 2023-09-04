@@ -131,6 +131,13 @@ exports.order = async (req, res) => {
         const pasta = req.body.pastaquantity !== undefined ? req.body.pastaquantity : null;
         const stew = req.body.stewquantity !== undefined ? req.body.stewquantity : null;
 
+        const omuricecombo = req.body.omuricecomboquantity !== undefined ? req.body.omuricecomboquantity : null;
+        const muffin = req.body.muffinquantity !== undefined ? req.body.muffinquantity : null;
+        const souffle = req.body.soufflequantity !== undefined ? req.body.soufflequantity : null;
+        const cake = req.body.cakequantity !== undefined ? req.body.cakequantity : null;
+        const pastacombo = req.body.pastacomboquantity !== undefined ? req.body.pastacomboquantity : null;
+        const sundae = req.body.sundaequantity !== undefined ? req.body.sundaequantity : null;
+
         const lefttime = req.body.time;
         const price = req.body.price;
 
@@ -159,6 +166,12 @@ exports.order = async (req, res) => {
             stew,
             price,
             lefttime,
+            omuricecombo,
+            muffin,
+            souffle,
+            cake,
+            pastacombo,
+            sundae,
             finish: 0
         });
 

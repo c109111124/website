@@ -37,6 +37,32 @@ const shopcartSchema = new mongoose.Schema({
         type: Number,
         
     },
+
+    omuricecombo: {
+        type: Number,
+        
+    },
+    muffin: {
+        type: Number,
+        
+    },
+    souffle: {
+        type: Number,
+        
+    },
+    cake: {
+        type: Number,
+        
+    },
+    pastacombo: {
+        type: Number,
+        
+    },
+    sundae: {
+        type: Number,
+        
+    },
+
     finish: {
         type: Boolean,
         required: true,

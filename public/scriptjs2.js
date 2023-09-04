@@ -71,6 +71,55 @@ window.addEventListener('load', function () {
             image: '00/1106-6.jpg',
             prepTime: 20,
         },
+
+        {
+            id: 'omuricecombo',
+            name: '蛋包飯套餐',
+            price: 150,
+            image: '00/1106-2.jpg',
+            prepTime: 10,
+        },
+        
+        {
+            id: 'muffin',
+            name: '鬆餅套餐',
+            price: 50,
+            image: '00/1106-3.jpg',
+            prepTime: 5,
+        },
+
+        {
+            id: 'souffle',
+            name: '舒芙蕾套餐',
+            price: 60,
+            image: '00/1106-8.jpg',
+            prepTime: 5,
+        },
+
+        {
+            id: 'cake',
+            name: '蛋糕套餐',
+            price: 80,
+            image: '00/1106-9.jpg',
+            prepTime: 5,
+        },
+
+        {
+            id: 'pastacombo',
+            name: '義大利麵套餐',
+            price: 150,
+            image: '00/1106-5.jpg',
+            prepTime: 10,
+        },
+
+        {
+            id: 'sundae',
+            name: '聖代套餐',
+            price: 50,
+            image: '00/1106-10.jpg',
+            prepTime: 5,
+        },
+
     ];
 
 
@@ -237,6 +286,31 @@ window.addEventListener('load', function () {
         showFoodItems('stew');
     });
 
+    document.getElementById('omuricecombobuycarbtn').addEventListener('click', function () {
+        showFoodItems('omuricecombo');
+    });
+
+    document.getElementById('muffinbuycarbtn').addEventListener('click', function () {
+        showFoodItems('muffin');
+    });
+
+    document.getElementById('soufflebuycarbtn').addEventListener('click', function () {
+        showFoodItems('souffle');
+    });
+
+    document.getElementById('cakebuycarbtn').addEventListener('click', function () {
+        showFoodItems('cake');
+    });
+
+    document.getElementById('pastacombobuycarbtn').addEventListener('click', function () {
+        showFoodItems('pastacombo');
+    });
+
+    document.getElementById('sundaebuycarbtn').addEventListener('click', function () {
+        showFoodItems('sundae');
+    });
+
+
 
 
 
@@ -257,18 +331,40 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.disabled = true;
                 pastabuycarbtn.disabled = true;
                 stewbuycarbtn.disabled = true;
+                omuricecombo.disabled = true;
+                muffin.disabled = true;
+                souffle.disabled = true;
+                cake.disabled = true;
+                pastacombo.disabled = true;
+                sundae.disabled = true;
+               
                 omuricebuycarbtn.innerText = '等待';
                 bakedricebuycarbtn.innerText = '等待';
                 melaleucabuycarbtn.innerText = '等待';
                 pizzabuycarbtn.innerText = '等待';
                 pastabuycarbtn.innerText = '等待';
                 stewbuycarbtn.innerText = '等待';
+                omuricecombo.innerText = '等待';
+                muffin.innerText = '等待';
+                souffle.innerText = '等待';
+                cake.innerText = '等待';
+                pastacombo.innerText = '等待';
+                sundae.innerText = '等待';
+
+
                 omuricebuycarbtn.style.backgroundColor = 'gray';
                 bakedricebuycarbtn.style.backgroundColor = 'gray';
                 melaleucabuycarbtn.style.backgroundColor = 'gray';
                 pizzabuycarbtn.style.backgroundColor = 'gray';
                 pastabuycarbtn.style.backgroundColor = 'gray';
                 stewbuycarbtn.style.backgroundColor = 'gray';
+                omuricecombo.style.backgroundColor = 'gray';
+                muffin.style.backgroundColor = 'gray';
+                souffle.style.backgroundColor = 'gray';
+                cake.style.backgroundColor = 'gray';
+                pastacombo.style.backgroundColor = 'gray';
+                sundae.style.backgroundColor = 'gray';
+
 
                 flytime.innerText = shstime + '秒';
             } else if (shstime == 0 && document.getElementById('order').innerText == '等待') {
@@ -280,12 +376,27 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.disabled = false;
                 pastabuycarbtn.disabled = false;
                 stewbuycarbtn.disabled = false;
+                omuricecombo.disabled = false;
+                muffin.disabled = false;
+                souffle.disabled = false;
+                cake.disabled = false;
+                pastacombo.disabled = false;
+                sundae.disabled = false;
+
+
                 omuricebuycarbtn.innerText = '加入購物車';
                 bakedricebuycarbtn.innerText = '加入購物車';
                 melaleucabuycarbtn.innerText = '加入購物車';
                 pizzabuycarbtn.innerText = '加入購物車';
                 pastabuycarbtn.innerText = '加入購物車';
                 stewbuycarbtn.innerText = '加入購物車';
+                omuricecombo.innerText = '加入購物車';
+                muffin.innerText = '加入購物車';
+                souffle.innerText = '加入購物車';
+                cake.innerText = '加入購物車';
+                pastacombo.innerText = '加入購物車';
+                sundae.innerText = '加入購物車';
+
 
                 omuricebuycarbtn.style.backgroundColor = '#571e9d';
                 bakedricebuycarbtn.style.backgroundColor = '#571e9d';
@@ -293,6 +404,13 @@ window.addEventListener('load', function () {
                 pizzabuycarbtn.style.backgroundColor = '#571e9d';
                 pastabuycarbtn.style.backgroundColor = '#571e9d';
                 stewbuycarbtn.style.backgroundColor = '#571e9d';
+                omuricecombo.style.backgroundColor = '#571e9d';
+                muffin.style.backgroundColor = '#571e9d';
+                souffle.style.backgroundColor = '#571e9d';
+                cake.style.backgroundColor = '#571e9d';
+                pastacombo.style.backgroundColor = '#571e9d';
+                sundae.style.backgroundColor = '#571e9d';
+                
 
                 
 
