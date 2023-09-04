@@ -166,6 +166,54 @@ window.addEventListener('load', function () {
             price:60,
             image:'00/1106-16.jpg',
             prepTime:5,
+        },
+
+        {
+            id:'honeytoast',
+            name:'蜂蜜土司',
+            price:30,
+            image:'00/1106-17.jpg',
+            prepTime:5,
+        },
+        
+        {
+            id:'waffledessert',
+            name:'鬆餅',
+            price:50,
+            image:'00/1106-18.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'souffledessert',
+            name:'舒芙蕾',
+            price:60,
+            image:'00/1106-19.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'frie',
+            name:'薯條',
+            price:40,
+            image:'00/1106-20.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'eggtart',
+            name:'蛋塔',
+            price:25,
+            image:'00/1106-21.jpg',
+            prepTime:5,
+        },
+
+        {
+            id:'icecream',
+            name:'冰淇淋',
+            price:50,
+            image:'00/1106-22.jpg',
+            prepTime:5,
         }
 
     ];
@@ -382,11 +430,31 @@ window.addEventListener('load', function () {
         showFoodItems('hotcoco');
     });
 
+    document.getElementById('honeytoastbuycarbtn').addEventListener('click', function () {
+        showFoodItems('honeytoast');
+    });
 
+    document.getElementById('waffledessertbuycarbtn').addEventListener('click', function () {
+        showFoodItems('waffledessert');
+    });
 
+    document.getElementById('souffledessertbuycarbtn').addEventListener('click', function () {
+        showFoodItems('souffledessert');
+    });
 
+    document.getElementById('friebuycarbtn').addEventListener('click', function () {
+        showFoodItems('frie');
+    });
 
+    document.getElementById('eggtartbuycarbtn').addEventListener('click', function () {
+        showFoodItems('eggtart');
+    });
 
+    document.getElementById('icecreambuycarbtn').addEventListener('click', function () {
+        showFoodItems('icecream');
+    });
+
+   
     var flytime = document.getElementById('flytime');
     var shstime = document.getElementById('shstime').value;
 
@@ -416,6 +484,13 @@ window.addEventListener('load', function () {
                 cappuccinobuycarbtn.disabled = true;
                 macchiatobuycarbtn.disabled = true;
                 hotcocobuycarbtn.disabled = true;
+                honeytoastbuycarbtn.disabled = true;
+                waffledessertbuycarbtn.disabled = true;
+                souffledessertbuycarbtn.disabled = true;
+                friebuycarbtn.disabled = true;
+                eggtartbuycarbtn.disabled = true;
+                icecreambuycarbtn.disabled = true;
+
 
                
                 omuricebuycarbtn.innerText = '等待';
@@ -436,6 +511,13 @@ window.addEventListener('load', function () {
                 cappuccinobuycarbtn.innerText = '等待';
                 macchiatobuycarbtn.innerText = '等待';
                 hotcocobuycarbtn.innerText = '等待';
+                honeytoastbuycarbtn.innerText = '等待';
+                waffledessertbuycarbtn.innerText = '等待';
+                souffledessertbuycarbtn.innerText = '等待';
+                friebuycarbtn.innerText = '等待';
+                eggtartbuycarbtn.innerText = '等待';
+                icecreambuycarbtn.innerText = '等待';
+
 
 
 
@@ -458,6 +540,13 @@ window.addEventListener('load', function () {
                 cappuccinobuycarbtn.style.backgroundColor = 'gray';
                 macchiatobuycarbtn.style.backgroundColor = 'gray';
                 hotcocobuycarbtn.style.backgroundColor = 'gray';
+                honeytoastbuycarbtn.style.backgroundColor = 'gray';
+                waffledessertbuycarbtn.style.backgroundColor = 'gray';
+                souffledessertbuycarbtn.style.backgroundColor = 'gray';
+                friebuycarbtn.style.backgroundColor = 'gray';
+                eggtartbuycarbtn.style.backgroundColor = 'gray';
+                icecreambuycarbtn.style.backgroundColor = 'gray';
+
 
 
 
@@ -483,6 +572,13 @@ window.addEventListener('load', function () {
                 cappuccinobuycarbtn.disabled = false;
                 macchiatobuycarbtn.disabled = false;
                 hotcocobuycarbtn.disabled = false;
+                honeytoastbuycarbtn.disabled = false;
+                waffledessertbuycarbtn.disabled = false;
+                souffledessertbuycarbtn.disabled = false;
+                friebuycarbtn.disabled = false;
+                eggtartbuycarbtn.disabled = false;
+                icecreambuycarbtn.disabled = false;
+
 
 
 
@@ -504,6 +600,13 @@ window.addEventListener('load', function () {
                 cappuccinobuycarbtn.innerText = '加入購物車';
                 macchiatobuycarbtn.innerText = '加入購物車';
                 hotcocobuycarbtn.innerText = '加入購物車';
+                honeytoastbuycarbtn.innerText = '加入購物車';
+                waffledessertbuycarbtn.innerText = '加入購物車';
+                souffledessertbuycarbtn.innerText = '加入購物車';
+                friebuycarbtn.innerText = '加入購物車';
+                eggtartbuycarbtn.innerText = '加入購物車';
+                icecreambuycarbtn.innerText = '加入購物車';
+
 
 
 
@@ -525,11 +628,16 @@ window.addEventListener('load', function () {
                 cappuccinobuycarbtn.style.backgroundColor = '#571e9d';
                 macchiatobuycarbtn.style.backgroundColor = '#571e9d';
                 hotcocobuycarbtn.style.backgroundColor = '#571e9d';
-                
-                
+                honeytoastbuycarbtn.style.backgroundColor = '#571e9d';
+                waffledessertbuycarbtn.style.backgroundColor = '#571e9d';
+                souffledessertbuycarbtn.style.backgroundColor = '#571e9d';
+                friebuycarbtn.style.backgroundColor = '#571e9d';
+                eggtartbuycarbtn.style.backgroundColor = '#571e9d';
+                icecreambuycarbtn.style.backgroundColor = '#571e9d';
+
+
 
                 
-
                 clearInterval();
 
                 document.getElementById('flytime').style.display = 'none';

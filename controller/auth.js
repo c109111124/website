@@ -144,6 +144,16 @@ exports.order = async (req, res) => {
         const cappuccino = req.body.cappuccinoquantity !== undefined ? req.body.cappuccinoquantity : null;
         const macchiato = req.body.macchiatoquantity !== undefined ? req.body.macchiatoquantity : null;
         const hotcoco = req.body.hotcocoquantity !== undefined ? req.body.hotcocoquantity : null;
+
+        const honeytoast = req.body.honeytoastquantity !== undefined ? req.body.honeytoastquantity : null;
+        const waffledessert = req.body.waffledessertquantity !== undefined ? req.body.waffledessertquantity : null;
+        const souffledessert = req.body.souffledessertquantity !== undefined ? req.body.souffledessertquantity : null;
+        const frie = req.body.friequantity !== undefined ? req.body.friequantity : null;
+        const icecream = req.body.icecreamquantity !== undefined ? req.body.icecreamquantity : null;
+        const eggtart = req.body.eggtartquantity !== undefined ? req.body.eggtartquantity : null;
+
+
+
         
 
 
@@ -188,6 +198,12 @@ exports.order = async (req, res) => {
             cappuccino,
             macchiato,
             hotcoco,
+            honeytoast,
+            waffledessert,
+            souffledessert,
+            frie,
+            eggtart,
+            icecream,
             finish: 0
         });
 

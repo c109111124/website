@@ -88,6 +88,31 @@ const shopcartSchema = new mongoose.Schema({
 
     },
 
+    honeytoast:{
+        type: Number,
+
+    },
+    waffledessert:{
+        type: Number,
+
+    },
+    souffledessert:{
+        type: Number,
+
+    },
+    frie:{
+        type: Number,
+
+    },
+    eggtart:{
+        type: Number,
+
+    },
+    icecream:{
+        type: Number,
+
+    },
+
     finish: {
         type: Boolean,
         required: true,
