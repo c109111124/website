@@ -17,7 +17,7 @@ const shopcartSchema = new mongoose.Schema({
         type: Number,
         
     },
-    muffin: {
+    bakedrice: {
         type: Number,
         
     },

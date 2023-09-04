@@ -33,10 +33,10 @@ window.addEventListener('load', function () {
         },
         // Add other meal items here...
         {
-            id: 'muffin',
-            name: '鬆餅',
+            id: 'bakedrice',
+            name: '焗飯',
             price: 50,
-            image: '00/1106-3.jpg',
+            image: '00/1106-7.jpg',
             prepTime: 5, // Default preparation time in minutes for 鬆餅
         },
         // Add the new meal item here...
@@ -216,8 +216,8 @@ window.addEventListener('load', function () {
         showFoodItems('omurice');
     });
 
-    document.getElementById('muffinbuycarbtn').addEventListener('click', function () {
-        showFoodItems('muffin');
+    document.getElementById('bakedricebuycarbtn').addEventListener('click', function () {
+        showFoodItems('bakedrice');
     });
 
     // Add event listener for the new meal item button
@@ -252,19 +252,19 @@ window.addEventListener('load', function () {
                 document.getElementById('order').innerText = '等待';
                 document.getElementById('order').disabled = true;
                 omuricebuycarbtn.disabled = true;
-                muffinbuycarbtn.disabled = true;
+                bakedricebuycarbtn.disabled = true;
                 melaleucabuycarbtn.disabled = true;
                 pizzabuycarbtn.disabled = true;
                 pastabuycarbtn.disabled = true;
                 stewbuycarbtn.disabled = true;
                 omuricebuycarbtn.innerText = '等待';
-                muffinbuycarbtn.innerText = '等待';
+                bakedricebuycarbtn.innerText = '等待';
                 melaleucabuycarbtn.innerText = '等待';
                 pizzabuycarbtn.innerText = '等待';
                 pastabuycarbtn.innerText = '等待';
                 stewbuycarbtn.innerText = '等待';
                 omuricebuycarbtn.style.backgroundColor = 'gray';
-                muffinbuycarbtn.style.backgroundColor = 'gray';
+                bakedricebuycarbtn.style.backgroundColor = 'gray';
                 melaleucabuycarbtn.style.backgroundColor = 'gray';
                 pizzabuycarbtn.style.backgroundColor = 'gray';
                 pastabuycarbtn.style.backgroundColor = 'gray';
@@ -275,20 +275,20 @@ window.addEventListener('load', function () {
                 document.getElementById('order').innerText = '買單';
                 document.getElementById('order').disabled = false;
                 omuricebuycarbtn.disabled = false;
-                muffinbuycarbtn.disabled = false;
+                bakedricebuycarbtn.disabled = false;
                 melaleucabuycarbtn.disabled = false;
                 pizzabuycarbtn.disabled = false;
                 pastabuycarbtn.disabled = false;
                 stewbuycarbtn.disabled = false;
                 omuricebuycarbtn.innerText = '加入購物車';
-                muffinbuycarbtn.innerText = '加入購物車';
+                bakedricebuycarbtn.innerText = '加入購物車';
                 melaleucabuycarbtn.innerText = '加入購物車';
                 pizzabuycarbtn.innerText = '加入購物車';
                 pastabuycarbtn.innerText = '加入購物車';
                 stewbuycarbtn.innerText = '加入購物車';
 
                 omuricebuycarbtn.style.backgroundColor = '#571e9d';
-                muffinbuycarbtn.style.backgroundColor = '#571e9d';
+                bakedricebuycarbtn.style.backgroundColor = '#571e9d';
                 melaleucabuycarbtn.style.backgroundColor = '#571e9d';
                 pizzabuycarbtn.style.backgroundColor = '#571e9d';
                 pastabuycarbtn.style.backgroundColor = '#571e9d';

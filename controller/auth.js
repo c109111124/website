@@ -125,7 +125,7 @@ exports.order = async (req, res) => {
         const email = req.session.reqemail;
 
         const omurice = req.body.omuricequantity !== undefined ? req.body.omuricequantity : null;
-        const muffin = req.body.muffinquantity !== undefined ? req.body.muffinquantity : null;
+        const bakedrice = req.body.bakedricequantity !== undefined ? req.body.bakedricequantity : null;
         const melaleuca = req.body.melaleucaquantity !== undefined ? req.body.melaleucaquantity : null;
         const pizza = req.body.pizzaquantity !== undefined ? req.body.pizzaquantity : null;
         const pasta = req.body.pastaquantity !== undefined ? req.body.pastaquantity : null;
@@ -152,7 +152,7 @@ exports.order = async (req, res) => {
         const newOrder = new Shopcart({
             email,
             omurice,
-            muffin,
+            bakedrice,
             melaleuca,
             pizza,
             pasta,
