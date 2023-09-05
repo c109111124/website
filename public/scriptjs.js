@@ -38,16 +38,16 @@ function scrollhome() {
 }
 
 function scrollmeal() {
-    window.scrollTo(0, 800)
+    window.scrollTo(0, 1850)
 
 }
 
 function scrollforever() {
-    window.scrollTo(0, 1950)
+    window.scrollTo(0, 2850)
 }
 
 function scrollus() {
-    window.scrollTo(0, 4800)
+    window.scrollTo(0, 5200)
 }
 
 
