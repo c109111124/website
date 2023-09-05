@@ -47,7 +47,7 @@ function scrollforever() {
 }
 
 function scrollus() {
-    window.scrollTo(0, 5420)
+    window.scrollTo(0, 5380)
 }
 
 
