@@ -13,14 +13,33 @@
     <header>
         <img src="00/201.png" alt="Your Image" class="header-image" id="logo">
         <div class="button-container">
-            <h2>XX Restaurant</h2>
-            <p>於2023年誕生的「XX restaurant」，提供精品咖啡及西式餐點</p>
+            <button class="button" onclick="scrollhome()">單點餐點</button>
+            <button class="button" onclick="scrollmeal()">本店套餐</button>
+            <button class="button" onclick="scrollforever()"><nobr>本店飲品</nobr></button>
+            <button class="button" onclick="scrollus()">本店甜點</button>
             
+            <div id="sidebarbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-layout-text-sidebar" viewBox="0 0 16 16">
+                    <path
+                        d="M3.5 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM3 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                    <path
+                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm12-1v14h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 0H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h9V1z" />
+                </svg>
+            </div>
 
         </div>
     </header>
 
     <div class="hideside"></div>
+    <div class="sidebars" id="sidebarsID">
+        <button class="sidebutton" onclick="scrollhome()">單點餐點</button>
+        <button class="sidebutton" onclick="scrollmeal()">本店套餐</button>
+        <button class="sidebutton" onclick="scrollforever()">永續與投資</button>
+        <button class="sidebutton" onclick="scrollus()">本店甜點</button>
+        
+    </div>
+
     
     <div class="new-block" id="section2">
         <div class="signall">

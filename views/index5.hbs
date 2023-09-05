@@ -16,8 +16,10 @@
         <img src="00/201.png" alt="Your Image" class="header-image" id="logo">
         <div class="button-container">
             
-            <h2>XX Restaurant</h2>
-            <p>於2023年誕生的「XX restaurant」，提供精品咖啡及西式餐點</p>
+            <button class="button" onclick="scrollhome()">單點餐點</button>
+            <button class="button" onclick="scrollmeal()">本店套餐</button>
+            <button class="button" onclick="scrollforever()"><nobr>本店飲品</nobr></button>
+            <button class="button" onclick="scrollus()">本店甜點</button>
 
             <div id="sidebarbtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
@@ -32,6 +34,13 @@
     </header>
 
     <div class="hideside"></div>
+    <div class="sidebars" id="sidebarsID">
+        <button class="sidebutton" onclick="scrollhome()">單點餐點</button>
+        <button class="sidebutton" onclick="scrollmeal()">本店套餐</button>
+        <button class="sidebutton" onclick="scrollforever()">永續與投資</button>
+        <button class="sidebutton" onclick="scrollus()">本店甜點</button>
+        
+    </div>
     
     <div class="new-block" id="section2">
         <div class="signall">
