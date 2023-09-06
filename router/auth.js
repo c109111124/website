@@ -12,4 +12,6 @@ router.get('/logout', authcontroller.logout)
 
 router.post('/order', authcontroller.order)
 
+router.get('/verify', authcontroller.verifyregister)
+
 module.exports = router;

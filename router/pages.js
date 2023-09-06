@@ -36,5 +36,13 @@ router.get('/index5', checkAuth, (req, res) => {
     res.render('index5', { recordname, recordemail, recordpassword, recordtime })
 })
 
+router.get('/verifyerror', (req, res) => {
+    res.render('verifyerror')
+})
+
+router.get('/verifyregister', (req, res) => {
+    res.render('verifyregister')
+})
+
 
 module.exports = router;

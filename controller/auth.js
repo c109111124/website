@@ -10,7 +10,23 @@ const mongoose = require('mongoose');
 const User = require('../models/users');
 const Shopcart = require('../models/shopcar');
 
+const crypto = require('crypto');
+const nodemailer = require('nodemailer');
 
+// 生成密钥对
+function generatePiarKey() {
+    return crypto.generateKeyPairSync('rsa', {
+        modulusLength: 2048, // 密钥长度
+        publicKeyEncoding: {
+            type: 'pkcs1', // 或 'spki'，取决于您的需求
+            format: 'pem'
+        },
+        privateKeyEncoding: {
+            type: 'pkcs1', // 或 'pkcs8'，取决于您的需求
+            format: 'pem'
+        }
+    });
+}
 
 //註冊
 exports.register = async (req, res) => {
@@ -32,17 +48,84 @@ exports.register = async (req, res) => {
                 message: '此信箱已註冊'
             })
         } else {
+
+            const { publicKey, privateKey } = generatePiarKey();
+
             const newuser = new User({
                 name,
                 email,
-                password: hashedpassword
+                password: hashedpassword,
+                publicKey,
+                privateKey,
+                registerboolen: false,
+                registerexpire: Date.now() + 1 * 60 * 1000,
             })
 
+            const sendregistermail = (email, name, userid, registerboolen, registerexpire) => {
+                try {
+                    const transporter = nodemailer.createTransport({
+                        host: 'smtp.gmail.com',
+                        port: 587,
+                        secure: false,
+                        requireTLS: true,
+                        auth: {
+                            user: process.env.EMAIL_ACCOUNT,
+                            pass: process.env.EMAIL_PASS
+                        }
+                    })
+
+                    const mailOptions = {
+                        from: process.env.EMAIL_ACCOUNT,
+                        to: email,
+                        subject: '註冊驗證',
+                        text: `請點擊連結以完成註冊
+                        https://order-qwic.onrender.com/auth/verify?id=${userid}`
+                    }
+
+                    transporter.sendMail(mailOptions, (err, info) => {
+                        if (err) {
+                            console.log(err);
+                        } else {
+                            console.log('Email sent: ' + info.response);
+                        }
+                    })
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+
+            await sendregistermail(req.body.email, req.body.name, newuser._id, newuser.registerboolen, newuser.registerexpire);
             await newuser.save();
+
             res.redirect('/index3')
         }
     }
 }
+
+exports.verifyregister = async (req, res) => {
+    try {
+        const userID = req.query.id;
+        const user = await User.findById(userID);
+
+        if (!user) {
+            res.redirect('/verifyerror');
+            return;
+        }
+
+        const registerexpire = user.registerexpire || 0;
+
+        if (Date.now() < registerexpire) {
+            await User.findOneAndUpdate({ _id: userID }, { $set: { registerboolen: true } });
+            res.redirect('/verifyregister');
+        } else {
+            console.log(456);
+            res.redirect('/verifyerror');
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 
 //登入
 exports.login = async (req, res) => {
@@ -77,7 +160,7 @@ exports.login = async (req, res) => {
         const token = jwt.sign({ email: email }, process.env.JWT_SECRET, {
             expiresIn: process.env.JWT_EXPIRES_IN
         });
-        
+
         console.log('網路令牌為', token);
         const cookieOptions = {
             expires: new Date(
@@ -154,7 +237,7 @@ exports.order = async (req, res) => {
 
 
 
-        
+
 
 
 
