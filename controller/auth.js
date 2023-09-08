@@ -97,7 +97,11 @@ exports.register = async (req, res) => {
             await sendregistermail(req.body.email, req.body.name, newuser._id, newuser.registerboolen, newuser.registerexpire);
             await newuser.save();
 
-            res.redirect('/index3')
+            
+             res.render('index3', {
+                 message: '請先完成Gmail驗證'
+             })
+
         }
     }
 }
@@ -127,7 +131,7 @@ exports.verifyregister = async (req, res) => {
 }
 
 
-//登入
+// 登录
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -141,6 +145,12 @@ exports.login = async (req, res) => {
         if (!hasUser) {
             return res.render('index3', {
                 message: '此信箱未註冊'
+            });
+        }
+
+        if (!hasUser.registerboolen) {
+            return res.render('index3', {
+                message: '請先完成Gmail驗證'
             });
         }
 
@@ -176,6 +186,7 @@ exports.login = async (req, res) => {
         console.log(error);
     }
 };
+
 
 
 //登出
