@@ -28,6 +28,8 @@ function generatePiarKey() {
     });
 }
 
+
+
 //註冊
 exports.register = async (req, res) => {
     const { name, email, password, passwordconfirm } = req.body;
@@ -48,6 +50,7 @@ exports.register = async (req, res) => {
                 message: '此信箱已註冊'
             })
         } else {
+
 
             const { publicKey, privateKey } = generatePiarKey();
 
@@ -80,7 +83,8 @@ exports.register = async (req, res) => {
                         subject: '註冊驗證',
                         text: `請點擊連結以完成註冊
                         https://order-qwic.onrender.com/auth/verify?id=${userid}`
-                    }
+                    }/*https://order-qwic.onrender.com/auth/verify?id=${userid}`
+                       http://localhost:3000/auth/verify?id=${userid}`*/
 
                     transporter.sendMail(mailOptions, (err, info) => {
                         if (err) {
@@ -97,10 +101,10 @@ exports.register = async (req, res) => {
             await sendregistermail(req.body.email, req.body.name, newuser._id, newuser.registerboolen, newuser.registerexpire);
             await newuser.save();
 
-            
-             res.render('index3', {
-                 message: '請先完成Gmail驗證'
-             })
+
+            res.render('index3', {
+                message: '請先完成Gmail驗證'
+            })
 
         }
     }
@@ -167,9 +171,15 @@ exports.login = async (req, res) => {
         req.session.reqemail = email;
         req.session.reqpassword = password;
 
-        const token = jwt.sign({ email: email }, process.env.JWT_SECRET, {
-            expiresIn: process.env.JWT_EXPIRES_IN
-        });
+        const payload = {
+            name: name,
+            email: email,
+            publicKey: hasUser.publicKey
+        }
+
+        const privateKey = hasUser.privateKey;
+
+        const token = jwt.sign(payload, privateKey, { algorithm: 'RS256' });
 
         console.log('網路令牌為', token);
         const cookieOptions = {
@@ -181,7 +191,7 @@ exports.login = async (req, res) => {
         res.cookie('jwt', token, cookieOptions);
 
         console.log('登入訊息', req.body);
-        res.redirect('/index5');
+        res.redirect('/index5?userid=' + hasUser._id);
     } catch (error) {
         console.log(error);
     }
@@ -304,6 +314,21 @@ exports.order = async (req, res) => {
         // Save the order
         await newOrder.save();
 
+        // 生成订单的JWT令牌
+        const payload = {
+            name: name,
+            email: email,
+            orderId: newOrder._id
+        };
+
+        const privateKey = hasUser.privateKey; // 用你的私钥替换此处的字符串
+        const token = jwt.sign(payload, privateKey, { algorithm: 'RS256' });
+        
+
+        // 将JWT令牌存储在session中，以便在后续请求中使用
+        req.session.orderToken = token;
+
+
         // Start the countdown and update session variables
         function startCountdown(time, orderId) {
             const countdownInterval = setInterval(async () => {
@@ -320,15 +345,15 @@ exports.order = async (req, res) => {
             }, 1000);
         }
 
-        startCountdown(lefttime, newOrder._id); // Start countdown for the new order
+        startCountdown(lefttime, newOrder._id); // 为新订单启动倒计时
 
         req.session.reqtime = lefttime;
         req.session.reqfinish = 0;
 
-        return res.redirect('/index5');
+        return res.redirect('/index5?userid=' + hasUser._id); // Redirect to order page');
     } catch (error) {
         console.log(error);
-        return res.redirect('/error-page'); // Redirect to an error page on error
+        return res.redirect('/error-page'); // 在出现错误时重定向到错误页面
     }
 }
 

@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
-
-
+const User = require('../models/users')
+const jwt = require('jsonwebtoken');
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -27,20 +27,52 @@ const checkAuth = (req, res, next) => {
     }
 }
 
-router.get('/index5', checkAuth, (req, res) => {
+router.get('/index5', checkAuth, async (req, res) => {
     const recordname = req.session.reqname;
     const recordemail = req.session.reqemail;
     const recordpassword = req.session.reqpassword;
     const recordtime = req.session.reqtime;
 
+
+    const token = req.cookies.jwt;
+
+    if (!token) {
+        console.log('no token');
+        return res.redirect('/index3');
+    }
+
+    const userid = req.query.userid;
+
+    const hasuser = await User.findOne({ _id: userid });
+
+
+    if (!hasuser) {
+
+        console.log('no user');
+        return res.redirect('/index3');
+    }
+
+
+    const publicKey = hasuser.publicKey;
+
+
+    jwt.verify(token, publicKey, (err, decodedToken) => {
+        if (err) {
+            console.log(123);
+            return res.redirect('/index3');
+        } else {
+            res.render('index5', { user: decodedToken , recordname, recordemail, recordpassword, recordtime})
+        }
+    })
+
     res.render('index5', { recordname, recordemail, recordpassword, recordtime })
 })
 
-router.get('/verifyerror', (req, res) => {
+router.get('/verifyerror', (req, res) => { 
     res.render('verifyerror')
 })
 
-router.get('/verifyregister', (req, res) => {
+router.get('/verifyregister', (req, res) => { 
     res.render('verifyregister')
 })
 
