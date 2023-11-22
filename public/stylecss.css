@@ -1387,23 +1387,23 @@ footer {
 
 
     .sign-in {
-        width: 90%;
+        width: 80%;
     }
 
     #namecontainer {
-        width: 90%;
+        width: 80%;
     }
 
     #passwordconfirmcontainer {
-        width: 90%;
+        width: 80%;
     }
 
     #emailcontainer {
-        width: 90%;
+        width: 80%;
     }
 
     #passwordcontainer {
-        width: 90%;
+        width: 80%;
     }
 
     .cartWindow.active {
