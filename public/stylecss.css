@@ -1389,7 +1389,8 @@ footer {
     .sign-in {
         width: 90%;
         height:150%;
-        margin-top:-50px
+        display: flex;
+        
     }
 
     #namecontainer {
