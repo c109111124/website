@@ -744,7 +744,7 @@ footer {
 
 .sign-in {
     width: 600px;
-    height: 800px;
+    height: 700px;
     background-color: hsl(0, 25%, 97%);
     position: fixed;
     z-index: 1;
@@ -1388,6 +1388,7 @@ footer {
 
     .sign-in {
         width: 90%;
+        height:90%
     }
 
     #namecontainer {
