@@ -746,7 +746,7 @@ footer {
     width: 600px;
     height: 700px;
     background-color: hsl(0, 25%, 97%);
-    position: fixed;
+    
     z-index: 1;
     margin-top: 400px;
     left: 50%;
@@ -1387,23 +1387,23 @@ footer {
 
 
     .sign-in {
-        width: 80%;
+        width: 90%;
     }
 
     #namecontainer {
-        width: 80%;
+        width: 90%;
     }
 
     #passwordconfirmcontainer {
-        width: 80%;
+        width: 90%;
     }
 
     #emailcontainer {
-        width: 80%;
+        width: 90%;
     }
 
     #passwordcontainer {
-        width: 80%;
+        width: 90%;
     }
 
     .cartWindow.active {
