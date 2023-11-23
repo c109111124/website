@@ -1406,18 +1406,23 @@ footer {
 
     #namecontainer {
         width: 90%;
+        font-size: 25px;
     }
 
     #passwordconfirmcontainer {
         width: 90%;
+        font-size: 25px;
     }
 
     #emailcontainer {
         width: 90%;
+        font-size: 25px;
+        
     }
 
     #passwordcontainer {
         width: 90%;
+        font-size: 25px;
     }
 
     .cartWindow.active {
