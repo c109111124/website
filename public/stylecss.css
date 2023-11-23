@@ -26,6 +26,7 @@ body {
 
 .scrolladmin {
     overflow-y: scroll;
+    width:95%;
 }
 
 .scrolladmin.active {
