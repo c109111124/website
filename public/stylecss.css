@@ -1492,8 +1492,122 @@ footer {
         width: 90%;
     }
 
+   
 
-
+    
+    
+    #emailcontainer label {
+        font-size: 25px;
+        font-weight: bold;
+        color: #0c0c0c;
+        margin-right: 3%;
+        margin-left: 3%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    #emailcontainer input {
+        width: 70%;
+        height: 30px;
+        font-size: 25px;
+        border: none;
+        border-bottom: #000000 solid 1px;
+        background-color: hsl(0, 25%, 97%);
+        padding-left: 10px;
+    }
+    
+ 
+    
+    #passwordcontainer label {
+        font-size: 25px;
+        font-weight: bold;
+        color: #0c0c0c;
+        margin-right: 3%;
+        margin-left: 3%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    #passwordcontainer input {
+        width: 70%;
+        height: 30px;
+        font-size: 25px;
+        border: none;
+        border-bottom: #000000 solid 1px;
+        background-color: hsl(0, 25%, 97%);
+        padding-left: 10px;
+    }
+    
+    #sin {
+        width: 100px;
+        height: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #0c0c0c;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        align-items: center;
+        
+        margin-left: 40%;
+        background-color: #f8d005;
+        text-shadow: 0.5px 0.2px 1px rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        text-align: center;
+    
+    }
+    
+    
+    
+    #namecontainer label {
+        font-size: 25px;
+        font-weight: bold;
+        color: #0c0c0c;
+        margin-right: 3%;
+        margin-left: 3%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    #namecontainer input {
+        width: 70%;
+        height: 30px;
+        font-size: 25px;
+        border: none;
+        border-bottom: #000000 solid 1px;
+        background-color: hsl(0, 25%, 97%);
+        padding-left: 10px;
+    }
+    
+    
+    
+    #passwordconfirmcontainer label {
+        font-size: 25px;
+        font-weight: bold;
+        color: #0c0c0c;
+        margin-right: 3%;
+        margin-left: 3%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    #passwordconfirmcontainer input {
+        width: 70%;
+        height: 30px;
+        font-size: 25px;
+        border: none;
+        border-bottom: #000000 solid 1px;
+        background-color: hsl(0, 25%, 97%);
+        padding-left: 10px;
+    }
 
 }
 
