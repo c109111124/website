@@ -1508,7 +1508,7 @@ footer {
 
     .sign-in {
         width: 90%;
-        height:146%;
+        height:130%;
         margin-top: 350px;
         
         
@@ -1524,15 +1524,15 @@ footer {
     margin-bottom: 0px;
 }
 
-#emailcontainer {
-    width: 90%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    #emailcontainer {
+        width: 90%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     
     #emailcontainer label {
         font-size: 20px;
@@ -1558,7 +1558,7 @@ footer {
     
      #passwordcontainer {
         width: 90%;
-        height: 50px;
+        height: 60px;
         display: flex;
         align-items: center;
         position: relative;
@@ -1609,7 +1609,7 @@ footer {
     
     #namecontainer {
         width: 90%;
-        height: 50px;
+        height: 60px;
         display: flex;
         align-items: center;
         position: relative;
@@ -1641,7 +1641,7 @@ footer {
     
     #passwordconfirmcontainer {
         width: 90%;
-        height: 50px;
+        height: 60px;
         display: flex;
         align-items: center;
         position: relative;
