@@ -1508,7 +1508,7 @@ footer {
 
     .sign-in {
         width: 90%;
-        height:150%;
+        height:146%;
         margin-top: 350px;
         
         
@@ -1516,7 +1516,7 @@ footer {
     }
 
     .sign-in h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     color: #0c0c0c;
     text-align: center;
@@ -1525,21 +1525,21 @@ footer {
 }
     
     #emailcontainer label {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: #0c0c0c;
         margin-right: 3%;
         margin-left: 3%;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     
     }
     
     #emailcontainer input {
         width: 70%;
-        height: 30px;
-        font-size: 25px;
+        height: 25px;
+        font-size: 20px;
         border: none;
         border-bottom: #000000 solid 1px;
         background-color: hsl(0, 25%, 97%);
@@ -1549,21 +1549,21 @@ footer {
  
     
     #passwordcontainer label {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: #0c0c0c;
         margin-right: 3%;
         margin-left: 3%;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     
     }
     
     #passwordcontainer input {
         width: 70%;
-        height: 30px;
-        font-size: 25px;
+        height: 25px;
+        font-size: 20px;
         border: none;
         border-bottom: #000000 solid 1px;
         background-color: hsl(0, 25%, 97%);
@@ -1571,9 +1571,9 @@ footer {
     }
     
     #sin {
-        width: 80px;
-        height: 40px;
-        font-size: 30px;
+        width: 60px;
+        height: 30px;
+        font-size: 20px;
         font-weight: bold;
         color: #0c0c0c;
         border: none;
@@ -1592,21 +1592,21 @@ footer {
     
     
     #namecontainer label {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: #0c0c0c;
         margin-right: 3%;
         margin-left: 3%;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     
     }
     
     #namecontainer input {
         width: 70%;
-        height: 30px;
-        font-size: 25px;
+        height: 25px;
+        font-size: 20px;
         border: none;
         border-bottom: #000000 solid 1px;
         background-color: hsl(0, 25%, 97%);
@@ -1616,21 +1616,21 @@ footer {
     
     
     #passwordconfirmcontainer label {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: #0c0c0c;
         margin-right: 3%;
         margin-left: 3%;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     
     }
     
     #passwordconfirmcontainer input {
         width: 70%;
-        height: 30px;
-        font-size: 25px;
+        height: 25px;
+        font-size: 20px;
         border: none;
         border-bottom: #000000 solid 1px;
         background-color: hsl(0, 25%, 97%);
