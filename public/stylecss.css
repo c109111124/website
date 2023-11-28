@@ -1506,6 +1506,17 @@ footer {
 
     }
 
+    .cartWindow {
+        display: none;
+        position: fixed;
+        position: relative;
+        
+        transform: translate(-1%, -1%);
+        width: 1000px;
+        height: 650px;
+    
+    }
+    
     .sign-in {
         width: 90%;
         height:90%;
